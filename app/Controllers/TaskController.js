@@ -1,8 +1,4 @@
-import { ProxyState } from "../AppState.js"
-import {listService} from "../Services/ListService.js"
 import { taskService } from "../Services/taskService.js";
-
-//TODO Don't forget to render to the screen after every data change.
 
 //Public
 export default class TaskController {

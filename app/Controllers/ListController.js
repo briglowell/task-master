@@ -28,4 +28,5 @@ export default class ListController {
   delete(id){
     listService.delete(id)
   }
+  
 }
