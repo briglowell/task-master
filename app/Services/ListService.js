@@ -4,6 +4,7 @@ import {saveState} from "../Utils/LocalStorage.js"
 
 //Public
 class ListService {
+  
   //TODO  Here is where we handle all of our business logic,
   //given the information you need in the controller,
   //what methods will you need to do when this class is first 'constructed'?
@@ -22,6 +23,12 @@ class ListService {
     if(window.confirm("Are you sure you want to delete this list?")){
     ProxyState.lists = ProxyState.lists.filter(l=>l.id !=id)
     ProxyState.tasks = ProxyState.tasks.filter(t=> t.listId !=id)
+    }
+  }
+  clear(id) {
+    if(window.confirm("Are you sure you want to delete all lists?")){
+      ProxyState.lists = []
+      ProxyState.tasks = []
     }
   }
 }
