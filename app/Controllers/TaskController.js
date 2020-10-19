@@ -1,4 +1,4 @@
-import { taskService } from "../Services/taskService.js";
+import { taskService } from "../Services/TaskService.js";
 
 //Public
 export default class TaskController {
